@@ -1,2 +1,2 @@
-# encriptador--de-texto
+# encriptador-de-texto
 Proyecto final Alura latam formacion de principiante en programacion
