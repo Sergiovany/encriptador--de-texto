@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="assets/icono encriptado.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="containertext">
+            <textarea name="text" id="text" class="container__texto" placeholder="Ingrese el texto aqui" cols="30" rows="10"></textarea>
+        </div>
+        <div class="condiciones">
+            <p>Solo letras minusculas y sin acentos</p>
+        </div>    
+        <div class="botones">
+            <button onclick="encriptarTexto();" class="container__boton1" type="button">Encriptar</button>
+            <button onclick="desencriptarTexto();" class="container__boton2" type="button">Desencriptar</button>
+        </div>
+        <div class="mostrar__texto" id="caja2">
+            <div>
+                <textarea name="texto_descifrado" id="texto_descifrado" class="texto_descifrado" readonly></textarea>
+            </div>
+            <div>
+                <button onclick="copiar();" class="container__boton3" type="button" id="copiar">Copiar</button>
+            </div>
+            <img src="assets/muñeco.png" alt="muñeco con lupa" id="imagen1">
+            <div class="mensaje__de__espera" id="mensaje__de__espera">
+                <h1 id="mensaje_titulo">Ningun mensaje fue encontrado</h1>
+                <p id="parrafo1">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+        </div> 
+          
+    </div> 
+    <script src="apps.js"></script>   
+</body>
+</html>
