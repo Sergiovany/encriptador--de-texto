@@ -216,6 +216,16 @@
     display: none;
 }
 
+.footer{
+    background-color:#0a3871;
+    padding: 8px;
+    color:#d8dfe8;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
 /* responsive desing tablet*/
 
 @media(max-width: 768px){
