@@ -1,6 +1,19 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    position: absolute;
+    margin: 10px 0px 0px 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: flex-start;
+    width: 120px;
+    height: 48px;
 }
 
 .container{

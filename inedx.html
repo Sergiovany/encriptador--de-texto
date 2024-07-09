@@ -8,37 +8,50 @@
     <link rel="shortcut icon" href="assets/icono encriptado.png" type="image/x-icon">
 </head>
 <body>
-    <div class="container">
-        <div class="containertext">
-            <textarea name="text" id="text" class="container__texto" placeholder="Ingrese el texto aqui" cols="30" rows="10"></textarea>
+    <main>
+        <header>
+            
+        </header>
+        <div class="container">
+            <a href="#" rel="">
+                <img src="./assets/logo.svg" class="logo" alt="Logo alura">
+            </a>
+            <div class="containertext">
+                <textarea name="text" id="text" class="container__texto" placeholder="Ingrese el texto aqui" cols="30" rows="10"></textarea>
+            </div>
+            <div class="condiciones">
+                <img src="./assets/aviso.svg" alt="aviso">
+                <p>Solo letras minusculas y sin acentos</p>
+            </div>    
+            <div class="botones">
+                <button onclick="encriptarTexto();" class="container__boton1" type="button">Encriptar</button>
+                <button onclick="desencriptarTexto();" class="container__boton2" type="button">Desencriptar</button>
+            </div>
+            <div class="mostrar__texto" id="caja2">
+                <div>
+                    <textarea name="texto_descifrado" id="texto_descifrado" class="texto_descifrado" readonly></textarea>
+                </div>
+                <div>
+                    <button onclick="copiar();" class="container__boton3" type="button" id="copiar">Copiar</button>
+                </div>
+                <img src="assets/muñeco.png" alt="muñeco con lupa" id="imagen1">
+                <div class="mensaje__de__espera" id="mensaje__de__espera">
+                    <h1 id="mensaje_titulo">Ningun mensaje fue encontrado</h1>
+                    <p id="parrafo1">Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+            </div> 
+            
         </div>
-        <div class="condiciones">
-            <p>Solo letras minusculas y sin acentos</p>
-        </div>    
-        <div class="botones">
-            <button onclick="encriptarTexto();" class="container__boton1" type="button">Encriptar</button>
-            <button onclick="desencriptarTexto();" class="container__boton2" type="button">Desencriptar</button>
-        </div>
-        <div class="mostrar__texto" id="caja2">
-            <div>
-                <textarea name="texto_descifrado" id="texto_descifrado" class="texto_descifrado" readonly></textarea>
-            </div>
-            <div>
-                <button onclick="copiar();" class="container__boton3" type="button" id="copiar">Copiar</button>
-            </div>
-            <img src="assets/muñeco.png" alt="muñeco con lupa" id="imagen1">
-            <div class="mensaje__de__espera" id="mensaje__de__espera">
-                <h1 id="mensaje_titulo">Ningun mensaje fue encontrado</h1>
-                <p id="parrafo1">Ingresa el texto que deseas encriptar o desencriptar</p>
-            </div>
-        </div> 
-          
-    </div>
-    <footer class="footer">
-        <p>
-            Desarrollado por Sergio Riaño
-        </p>
-    </footer> 
-    <script src="apps.js"></script>   
+        <footer class="footer">
+            <p>
+                &copy; copyright 2024 - Encriptador de Texto - Desarrollado por Sergio Riaño
+            </p>
+            <a href="#" rel=""></a>
+                <img src="./assets/linkedin.svg" alt="logo linkedin" class="linkedin">
+            <a href="#" rel=""></a>
+                <img src="./assets/github.svg" alt="logo github" class="github">
+        </footer> 
+        <script src="apps.js"></script>
+    </main> 
 </body>
 </html>
